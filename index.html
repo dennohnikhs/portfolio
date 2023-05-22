@@ -97,15 +97,15 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 text-center">
             ABOUT ME
-            <hr class="divider divider-light" />
-            <div class="col-lg-4 col-sm-6">
+      <div class="container px-lg-3">
+        <div class="col-lg-2 col-sm-4">
               <a
                 class="portfolio-box"
                 href="assets/img/portfolio/my-profile-edit.png"
                 title="Langat "
               >
                 <img
-                  style="margin-left: 17rem; border-radius: 90px"
+                  style="border-radius: 90px;margin-top: 2rem;"
                   class="img-fluid"
                   src="assets/img/portfolio/my-profile-edit.png"
                   alt="..."
@@ -120,7 +120,8 @@
                 </div>
               </a>
             </div>
-
+      </div>
+         
             <div class="mt-5">
               <div class="mb-2"></i></div>
               <h1 class="h4 mb-4">EDUCATION</h1>
@@ -231,7 +232,6 @@
     <section class="page-section" id="services">
       <div class="container px-4 px-lg-5">
         <h2 class="text-center mt-0">At Your Service</h2>
-        <hr class="divider" />
         <div class="row gx-4 gx-lg-5">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
@@ -378,63 +378,54 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div class="col-lg-6">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
               <!-- Name input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
                   id="name"
                   type="text"
-                  placeholder="Enter your name..."
-                  data-sb-validations="required"
+                  name="name"
+                required
                 />
                 <label for="name">Name</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  Name is required.
-                </div>
+                
               </div>
               <!-- Email address input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
                   id="email"
-                  type="email"
-                  placeholder="name@example.com"
-                  data-sb-validations="required,email"
+                  type="text"
+                  name="email"
+                  required
                 />
                 <label for="email">Email</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">
-                  email is required.
-                </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                  invalid email check back and try again
-                </div>
+               
+                
               </div>
               <!-- Phone number input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
                   id="phone"
-                  type="tel"
-                  placeholder="(254) 717******"
-                  data-sb-validations="required"
+                  type="text"
+                  name="phone"
+                  required
                 />
                 <label for="phone">Phone number</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  A phone number is required.
-                </div>
+                
               </div>
               <!-- Message input-->
               <div class="form-floating mb-3">
-                <textarea
+                <input
                   class="form-control"
                   id="message"
                   type="text"
-                  placeholder="Enter your message here..."
+                  name="message"
                   style="height: 10rem"
-                  data-sb-validations="required"
-                ></textarea>
-                <label for="message">Message</label>
+                 required
+                ></input>
+                <label for="message">Message here ...</label>
                 <div
                   class="invalid-feedback"
                   data-sb-feedback="message:required"
@@ -451,14 +442,14 @@
               <!-- Submit Button-->
               <div class="d-grid">
                 <button
-                  class="btn btn-primary btn-xl disabled"
+                  class="btn btn-primary btn-xl"
                   id="submitButton"
                   type="submit"
+                  onclick="submitForm()"
                 >
                   Submit
                 </button>
               </div>
-            </form>
           </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center">
